@@ -11,7 +11,6 @@ html{
     background-color: aliceblue;
 }
 body{
-    background-color: #2b384b;
     max-width: 720px;
     height: 1520px;
     overflow-x: hidden;
@@ -19,6 +18,8 @@ body{
 header{
     padding: 36px;
     padding-bottom: 0px;
+    background-color: #2b384b;
+
 }
 .containerIcons{
     width: 646px;
@@ -37,11 +38,10 @@ header{
 .containerAvatar{
     width: 646px;
     display: flex;
-    margin-bottom: 48px;
+    padding-bottom: 48px;
     align-items: center;
 
     background-color: var(--colorDebug);
-    padding: 1px;
 }
 .containerAvatar img{
     width: 100px;
@@ -64,8 +64,12 @@ header{
 
 main{
     padding-left: 36px;
+    background-color: #2b384b;
+    border-bottom-left-radius: 60px;
+    padding-bottom: 225px;
 }
-.container1{
+.container1,
+.container2{
     display: flex;
     overflow-x: scroll;
 }
@@ -115,4 +119,80 @@ main{
     color: white;
     display: flex;
     align-items: center;
+}
+
+
+
+.container2{
+    margin-top: 50px;
+    position: absolute;
+    width: 684px;
+}
+.btnColorid{
+    min-width: 193px;
+    height: 219px;
+    background-size: cover;
+    margin-right: 26px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 26px;
+    color: white;
+    font-size: 20px;
+}
+.btn1{
+    background-image: url(img/index/btnPix.png);
+}
+.btn2{
+    background-image: url(img/index/btnCartao.png);
+}
+.btn3{
+    background-image: url(img/index/btnPix.png);
+}
+.btn4{
+    background-image: url(img/index/btnColocarDin.png);
+}
+
+
+
+.main2{
+    margin: 0px 36px;
+    color: #666;
+
+}
+.main2 > p{
+    margin: 82px 0px 28px 0px;
+}
+.destaque,
+.mundoIti{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 7px 14px rgb(0 0 0 / 10%);
+
+}
+.containerTextDestaque{
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.containerTextDestaque p:nth-child(2){
+    color: black;
+    font-weight: bold;
+}
+.mundoIti{
+    border-radius: 50px 0px 0px 50px;
+    padding: 10px;
+    justify-content: start;
+    align-items: center;
+
+}
+.mundoIti img{
+    border-radius: 50%;
+    margin-right: 20px;
 }

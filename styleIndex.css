@@ -1,213 +1,108 @@
+:root{
+    --colorDebug: rgba(255, 255, 255, 0);
+}
 *{
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+}
+html{
+    background-color: aliceblue;
 }
 body{
-    background-color: hsl(0, 0%, 98%);
-    overflow-x: hidden;
-}
-.teste{
-    width: 720px;
+    background-color: #2b384b;
+    max-width: 720px;
     height: 1520px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(0, 0, 255, 0.158);
-}
-.teste div{
-    width: 720px;
-    height: 100%;   
-    display: flex; 
-    justify-content: space-between;
-}
-.teste div:nth-child(3){
-    align-items: flex-end;
 }
 header{
-    background-color: rgb(43, 56, 75);
-    margin-bottom: -5px;
-
+    padding: 36px;
 }
 .containerIcons{
+    width: 646px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px;
-}
-.containerIcons img{
-    width: 30px;
-}
-#itiLogo{
-    width: 40px;
+    align-items: flex-end;
+    margin-bottom: 70px;
+
+    background-color: var(--colorDebug);
+    padding: 1px;
 }
 
-.containerPerfil{
+
+
+
+.containerAvatar{
+    width: 646px;
     display: flex;
+    margin-bottom: 48px;
     align-items: center;
-    padding: 20px;
-    padding-bottom: 26px;
+
+    background-color: var(--colorDebug);
+    padding: 1px;
 }
-.containerPerfil div{
-    width: 100%;
-    padding: 0px 20px;
+.containerAvatar img{
+    width: 100px;
+    height: 100px;
+}
+.acessPerfil{
+    margin-left: 23px;
     color: white;
 }
-.containerPerfil img{
-    width: 60px;
-}
-.containerPerfil p:nth-child(1){
+.acessPerfil p:nth-child(1){
+    font-size: 20px;
     font-weight: bold;
+    margin-bottom: 23px;
 }
-.containerPerfil p:nth-child(2){
-    font-size: small;
-    margin-top: 10px;
+.acessPerfil p:nth-child(2){
+    font-size: 16px;
 }
+
 
 
 main{
-    background-color: rgb(43, 56, 75);
-    padding-bottom: 130px;
-    border-radius: 0px 0px 0px 40px;
+    padding: 0px 36px;
 }
 .containerSaldoIti{
-    background-color: rgb(56,  71, 92);
-    margin-right: 16px;
-    border-radius: 20px;
+    width: 481px;
+    height: 167px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #38475c;
+    padding: 37px 0px;
     color: white;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-
-    min-width: 270px;
-
-    font-size: small;
 }
-
-.containerSaldoIti > div span:nth-child(2){
-    margin-left: 20px;
-}
-
-.containerSaldoIti > div:nth-child(1){
-    padding: 20px 26px;
+.containerCoisaEstranha{
     display: flex;
 }
-.containerSaldoIti > div:nth-child(1)  p{
-    margin-bottom: 10px;
-}
-.containerSaldoIti > div:nth-child(1)  div p{
+.containerCoisaEstranha p{
+    font-size: 16px;
     font-weight: bold;
-    margin-left: 10px;
-    font-size: 1.7em;
-}
-.containerSaldoIti > div:nth-child(2){
-    padding: 14px 26px;
-    border-top: 1px solid rgba(43, 56, 75, 0.8);
 }
 .coisaEstranha{
-    background-color: rgb(255, 84, 145);
-    color: rgb(255, 84, 145);
-    padding: 10px 2px;
-    border-radius: 0px 5px 5px 0px;
-    margin-left: -26px;
-    height: fit-content;
+    width: 10px;
+    height: 45px;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #ff5493;
+    margin-right: 28px;
 }
 
-.containerScroll{
-    display: flex;
-    overflow: scroll;
-    padding: 14px 0px;
-    max-width: 100%;
-    margin-left: 20px;
+.containerSaldoReal{
+    margin-left: 54px;
+    margin-bottom: 50px;
 }
-.containerBntColorid{
-    display: flex;
-    overflow: scroll;
-    margin-top: 26px;
-    position: absolute;
-    padding-bottom: 14px;
-    max-width: 100%;
-
+.containerSaldoReal p{
+    font-size: 38px;
+    font-weight: bold;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
-
-
-.bntColorid{
-    background-image: linear-gradient(134deg, rgb(238, 107, 16), rgb(251, 78, 127));
-    margin-left: 16px;
-
-    height: 130px;
-    min-width: 120px;
-
-    padding: 16px;
+.containerRendimentos{
+    border-top: 1px solid #2b384b;
+    width: 481px;
+    height: 76px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #38475c;
+    padding: 37px 35px;
     color: white;
-    font-size: small;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    border-radius: 16px;
-    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.2);
-}
-
-
-.destaques{
-    margin: 50px 20px 20px 20px;
-    font-size: small;
-    font-weight: normal;
-    color: #666;
-}
-.destaques img{
-    height: 120px;
-}
-.destaques > div{
-    background-color: white;
-    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.2);
-    margin-top: 20px;
-    border-radius: 20px;
-    display: flex;
-    overflow: hidden;
-    font-size: small;
-
-}
-.destaques span{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.destaques  span p:nth-child(2){
-    color: black;
-}
-.destaques > div p:nth-child(1){
-    font-weight: lighter;
-}
-
-
-
-.mundoIti{
-    margin: 30px 20px 20px 20px;
-    font-size: small;
-    font-weight: normal;
-    color: #666;
-
-}
-.mundoIti > div{
-    background-color: white;
-    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.2);
-    margin: 20px 0px;
-    border-radius: 50px 20px 20px 50px;
-    display: flex;
-    overflow: hidden;
-    padding: 10px;
     align-items: center;
-    color: black;
-}
-.mundoIti  img{
-    border-radius: 50%;
-    margin-right: 20px;
-    width: 50px;
 }

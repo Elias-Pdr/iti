@@ -14,9 +14,11 @@ body{
     background-color: #2b384b;
     max-width: 720px;
     height: 1520px;
+    overflow-x: hidden;
 }
 header{
     padding: 36px;
+    padding-bottom: 0px;
 }
 .containerIcons{
     width: 646px;
@@ -61,7 +63,14 @@ header{
 
 
 main{
-    padding: 0px 36px;
+    padding-left: 36px;
+}
+.container1{
+    display: flex;
+    overflow-x: scroll;
+}
+::-webkit-scrollbar{
+    height: 0px;
 }
 .containerSaldoIti{
     width: 481px;
@@ -70,6 +79,7 @@ main{
     background-color: #38475c;
     padding: 37px 0px;
     color: white;
+    margin-right: 20px;
 }
 .containerCoisaEstranha{
     display: flex;

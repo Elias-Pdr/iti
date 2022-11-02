@@ -6,7 +6,9 @@
 }
 body{
     background-color: hsl(0, 0%, 98%);
+    overflow-x: hidden;
 }
+
 header{
     background-color: rgb(43, 56, 75);
 }
@@ -16,6 +18,11 @@ header{
     justify-content: space-between;
     padding: 20px;
 }
+.containerIcons img{
+    width: 30px;
+}
+
+
 .containerPerfil{
     display: flex;
     align-items: center;
@@ -25,6 +32,9 @@ header{
     width: 100%;
     padding: 0px 20px;
     color: white;
+}
+.containerPerfil img{
+    width: 60px;
 }
 .containerPerfil p:nth-child(1){
     font-weight: bold;
@@ -38,9 +48,8 @@ header{
 main{
     background-color: rgb(43, 56, 75);
     padding-top: 30px;
-    padding-bottom: 150px;
-    border-radius: 0px 0px 0px 80px;
-    
+    padding-bottom: 130px;
+    border-radius: 0px 0px 0px 40px;
 }
 .containerSaldoIti{
     background-color: rgb(56,  71, 92);
@@ -48,9 +57,10 @@ main{
     border-radius: 20px;
     color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 70vw;
 }
 .containerSaldoIti > div:nth-child(1){
-    padding: 30px 26px;
+    padding: 20px 26px;
 }
 .containerSaldoIti > div:nth-child(1) > p{
     margin-bottom: 10px;
@@ -63,7 +73,7 @@ main{
     margin-left: 10px;
 }
 .containerSaldoIti > div:nth-child(2){
-    padding: 20px 26px;
+    padding: 14px 26px;
     border-top: 2px solid rgba(43, 56, 75, 0.8);
 }
 .coisaEstranha{
@@ -79,9 +89,9 @@ main{
 .containerBntColorid{
     display: flex;
     overflow: scroll;
-    margin-top: 40px;
+    margin-top: 26px;
     position: absolute;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
 }
 
 ::-webkit-scrollbar {
@@ -94,22 +104,25 @@ main{
     background-image: linear-gradient(134deg, rgb(238, 107, 16), rgb(251, 78, 127));
     margin-left: 20px;
 
-    height: 160px;
-    min-width: 150px;
+    height: 140px;
+    min-width: 130px;
 
-    padding: 20px;
+    padding: 16px;
     color: white;
     font-size: small;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    border-radius: 20px;
+    border-radius: 16px;
     box-shadow: 0px 7px 10px hsla(0, 0%, 0%, 0.3);
 }
 
 
 .destaques{
     margin: 90px 20px 20px 20px;
+}
+.destaques img{
+    height: 120px;
 }
 .destaques > div{
     background-color: white;
@@ -126,7 +139,7 @@ main{
     justify-content: space-between;
 }
 .destaques > div p:nth-child(1){
-    margin-bottom: 60px;
+    font-weight: lighter;
 }
 
 
@@ -146,4 +159,5 @@ main{
 .mundoIti  img{
     border-radius: 50%;
     margin-right: 20px;
+    width: 50px;
 }

@@ -7,10 +7,13 @@
 body{
     background-color: hsl(0, 0%, 98%);
     overflow-x: hidden;
+    padding-bottom: 50px;
 }
 
 header{
     background-color: rgb(43, 56, 75);
+    margin-bottom: -5px;
+
 }
 .containerIcons{
     display: flex;
@@ -47,7 +50,6 @@ header{
 
 main{
     background-color: rgb(43, 56, 75);
-    padding-top: 30px;
     padding-bottom: 130px;
     border-radius: 0px 0px 0px 40px;
 }
@@ -58,23 +60,23 @@ main{
     color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     width: 70vw;
+
+    font-size: small;
 }
 .containerSaldoIti > div:nth-child(1){
     padding: 20px 26px;
 }
 .containerSaldoIti > div:nth-child(1) > p{
     margin-bottom: 10px;
-    font-size: 1em;
-
 }
 .containerSaldoIti > div:nth-child(1) > div p{
-    font-size: 1.5em;
     font-weight: bold;
     margin-left: 10px;
+    font-size: 1em;
 }
 .containerSaldoIti > div:nth-child(2){
     padding: 14px 26px;
-    border-top: 2px solid rgba(43, 56, 75, 0.8);
+    border-top: 1px solid rgba(43, 56, 75, 0.8);
 }
 .coisaEstranha{
     background-color: rgb(255, 84, 145);
@@ -92,6 +94,8 @@ main{
     margin-top: 26px;
     position: absolute;
     padding-bottom: 14px;
+    max-width: 100%;
+
 }
 
 ::-webkit-scrollbar {
@@ -102,10 +106,10 @@ main{
 
 .bntColorid{
     background-image: linear-gradient(134deg, rgb(238, 107, 16), rgb(251, 78, 127));
-    margin-left: 20px;
+    margin-left: 16px;
 
-    height: 140px;
-    min-width: 130px;
+    height: 130px;
+    min-width: 120px;
 
     padding: 16px;
     color: white;
@@ -114,23 +118,28 @@ main{
     flex-direction: column;
     justify-content: end;
     border-radius: 16px;
-    box-shadow: 0px 7px 10px hsla(0, 0%, 0%, 0.3);
+    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.2);
 }
 
 
 .destaques{
-    margin: 90px 20px 20px 20px;
+    margin: 50px 20px 20px 20px;
+    font-size: small;
+    font-weight: normal;
+    color: #666;
 }
 .destaques img{
     height: 120px;
 }
 .destaques > div{
     background-color: white;
-    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.3);
+    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.2);
     margin-top: 20px;
     border-radius: 20px;
     display: flex;
     overflow: hidden;
+    font-size: small;
+
 }
 .destaques span{
     padding: 20px;
@@ -138,23 +147,32 @@ main{
     flex-direction: column;
     justify-content: space-between;
 }
+.destaques  span p:nth-child(2){
+    color: black;
+}
 .destaques > div p:nth-child(1){
     font-weight: lighter;
 }
 
 
+
 .mundoIti{
-    margin: 60px 20px 20px 20px;
+    margin: 30px 20px 20px 20px;
+    font-size: small;
+    font-weight: normal;
+    color: #666;
+
 }
 .mundoIti > div{
     background-color: white;
-    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.3);
-    margin-top: 20px;
+    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.2);
+    margin: 20px 0px;
     border-radius: 50px 20px 20px 50px;
     display: flex;
     overflow: hidden;
     padding: 10px;
     align-items: center;
+    color: black;
 }
 .mundoIti  img{
     border-radius: 50%;

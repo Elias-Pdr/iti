@@ -7,9 +7,25 @@
 body{
     background-color: hsl(0, 0%, 98%);
     overflow-x: hidden;
-    padding-bottom: 50px;
 }
-
+.teste{
+    width: 720px;
+    height: 1520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.158);
+}
+.teste div{
+    width: 720px;
+    height: 100%;   
+    display: flex; 
+    justify-content: space-between;
+}
+.teste div:nth-child(3){
+    align-items: flex-end;
+}
 header{
     background-color: rgb(43, 56, 75);
     margin-bottom: -5px;

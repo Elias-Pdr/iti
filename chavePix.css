@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: Helvetica, sans-serif;
+}
+html{
+    background-color: blue;
+}
+body{
+    min-width: 720px;
+    width: 720px;
+    height: 1520px;
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 91px;
+}
+header img{
+    position: absolute;
+    left: 28px;
+
+}
+header p{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+.containerbtns{
+    display: flex;
+    margin-bottom: 476px;
+    margin-top: 40px;
+    justify-content: center;
+}
+.containerbtns .btns:nth-child(1){
+    margin-left: 0px;
+}
+.btns{
+    color: #666;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: small;
+    margin-left: 50px;
+}
+
+.btns img{
+    box-shadow: 0px 0px 14px rgb(0 0 0 / 16%);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+
+
+
+.containerInput > p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.containerInput > div{
+    display: flex;
+}
+.containerDDD{
+    margin: 0px 10px 0px 32px;
+    font-size: 35px;
+
+    width: 145px;
+    height: 76px;
+    border-bottom: 2px solid #666;
+    font-weight: bold;
+}
+.containerTel{
+    margin-right: 35px;
+    font-size: 35px;
+
+    width: 484px;
+    height: 76px;
+    border-bottom: 2px solid #666;
+    font-weight: bold;
+}
+.containerTel input{
+    width: 100%;
+    height: fit-content;
+    outline: none;
+    border: none;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    background: none;
+}

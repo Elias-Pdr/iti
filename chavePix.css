@@ -27,8 +27,7 @@ header img{
 header p{
     width: 100%;
     text-align: center;
-    font-weight: bold;
-    font-size: 1em;
+    font-size: 20px;
 }
 .containerbtns{
     display: flex;
@@ -64,15 +63,15 @@ header p{
 }
 .containerInput > div{
     display: flex;
+    justify-content: space-between;
 }
 .containerDDD{
-    margin: 0px 10px 0px 32px;
+    margin-left: 32px;
     font-size: 35px;
 
     width: 145px;
     height: 76px;
-    border-bottom: 2px solid #666;
-    font-weight: bold;
+    border-bottom: 2px solid #dcdcdc;
 }
 .containerTel{
     margin-right: 35px;
@@ -80,8 +79,7 @@ header p{
 
     width: 484px;
     height: 76px;
-    border-bottom: 2px solid #666;
-    font-weight: bold;
+    border-bottom: 2px solid #dcdcdc;
 }
 .containerTel input{
     width: 100%;
@@ -94,4 +92,7 @@ header p{
     display: flex;
     justify-content: flex-start;
     background: none;
+}
+.containerTel input::placeholder{
+    color: #dcdcdc;
 }

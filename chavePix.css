@@ -96,3 +96,21 @@ header p{
 .containerTel input::placeholder{
     color: #dcdcdc;
 }
+
+
+footer{
+    position: absolute;
+    width: 720px;
+    bottom: 0px;
+    padding: 51px 58px;
+}
+footer input{
+    padding: 26px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    height: 78px;
+    color: #cecece;
+    background-color: #e5e5e5;
+    font-size: 20px;
+}

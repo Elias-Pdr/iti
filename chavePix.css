@@ -10,7 +10,6 @@ html{
 body{
     min-width: 720px;
     width: 720px;
-    height: 1520px;
     overflow-x: hidden;
     background-color: #fafafa;
 }
@@ -88,7 +87,6 @@ header p{
     border: none;
     font-size: 35px;
     text-align: center;
-    font-weight: bold;
     display: flex;
     justify-content: flex-start;
     background: none;
@@ -99,10 +97,11 @@ header p{
 
 
 footer{
-    position: absolute;
     width: 720px;
     bottom: 0px;
     padding: 51px 58px;
+    padding-top: 0px;
+    margin-top: 473px;
 }
 footer input{
     padding: 26px;

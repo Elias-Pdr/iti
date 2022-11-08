@@ -10,7 +10,7 @@ html{
 }
 body{
     width: 720px;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;

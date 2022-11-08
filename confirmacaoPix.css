@@ -112,9 +112,13 @@ header div:nth-child(1) p{
 
 footer{
     width: 720px;
-
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     padding: 51px 58px;
     padding-top: 0px;
+    position: fixed;
 }
 footer input{
     padding: 26px;

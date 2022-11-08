@@ -4,21 +4,12 @@
     padding: 0%;
     font-family: Helvetica, sans-serif;
 }
-html{
-    background-color: blue;
-    height: 1520px;
-}
-body{
 
-    min-width: 720px;
-    width: 720px;
-    height: 1520px;
-    overflow-x: hidden;
+body{
     background-color: #2b384b;
     color: white;
 }
 header{
-    
     display: flex;
     align-items: center;
     height: 106px;
@@ -27,7 +18,8 @@ header{
 header img{
     position: absolute;
     left: 24px;
-
+    cursor: pointer;
+    z-index: 100;
 }
 header p{
     width: 100%;
@@ -81,16 +73,7 @@ main > p:nth-child(3){
 }
 
 
-footer{
-    width: 720px;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    padding: 51px 58px;
-    padding-top: 0px;
-    position: fixed;
-}
+
 footer input{
     padding: 26px;
     border-radius: 50px;

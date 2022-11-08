@@ -9,9 +9,8 @@
 }
 
 body,html{
-    min-width: 720px;
     width: 100%;
-    height: 1520px;
+    height: 100vh;
     overflow-x: hidden;
 }
 header{

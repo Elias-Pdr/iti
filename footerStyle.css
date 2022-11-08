@@ -1,0 +1,22 @@
+html{
+    background-color: rgb(143, 5, 120);
+    height: 100vh;
+}
+body{
+    width: 720px;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer{
+    width: 720px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 51px 58px;
+    padding-top: 0px;
+    position: fixed;
+}

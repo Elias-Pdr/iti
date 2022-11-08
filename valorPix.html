@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="valorPix.css">
+    <link rel="stylesheet" href="footerStyle.css">
+
 </head>
 <body>
+
+    <div>
+        <header>
+            <img src="img/valorPix/back.png" onclick="window.location.href='chavePix.html'">
+            <p>valor</p>
+        </header>
+        <main>
+            <p>quanto você vai pagar para</p>
+            <p>Pedro Elias Jerusaleno Calabianqui</p>
+            <div class="containerInput">
+                <input type="number" name="valor" id="valor" placeholder="R$ 0,00">
+            </div>
+            <p>limite de R$ 1.000,00</p>
+        </main>
+    </div>
+    
     <footer>
         <input type="button" value="continuar" onclick="window.location.href='confirmacaoPix.html'">
     </footer>
-
-    <header>
-        <img src="img/valorPix/back.png" onclick="window.location.href='chavePix.html'">
-        <p>valor</p>
-    </header>
-    <main>
-        <p>quanto você vai pagar para</p>
-        <p>Pedro Elias Jerusaleno Calabianqui</p>
-        <div class="containerInput">
-            <input type="number" name="valor" id="valor" placeholder="R$ 0,00">
-        </div>
-        <p>limite de R$ 1.000,00</p>
-    </main>
 
 </body>
 </html>

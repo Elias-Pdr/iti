@@ -9,11 +9,13 @@ html{
     height: 1520px;
 }
 body{
-    min-width: 720px;
     width: 720px;
     height: 100%;
     overflow-x: hidden;
     background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 header{
     display: flex;
@@ -99,11 +101,10 @@ header p{
 
 
 footer{
-    position: absolute;
     width: 720px;
-    bottom: 0px;
     padding: 51px 58px;
     padding-top: 0px;
+    background-color: aqua;
 }
 footer input{
     padding: 26px;

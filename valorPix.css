@@ -9,8 +9,6 @@ html{
     height: 1520px;
 }
 body{
-    position: fixed;
-    width: 100%;
 
     min-width: 720px;
     width: 720px;

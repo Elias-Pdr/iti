@@ -12,8 +12,8 @@ body{
     position: absolute;
 
     width: 720px;
-    min-height: 1500px;
     height: 100vh;
+    min-height: 1500px;
 
     overflow-x: hidden;
     display: flex;
@@ -24,6 +24,7 @@ footer{
     bottom: 56px;
 
     width: 720px;
+    height: 78px;
 
     display: flex;
     justify-content: flex-end;

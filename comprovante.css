@@ -35,7 +35,7 @@ main{
     border-radius: 20px;
     margin: 0px 36px;
     padding-left: 35px;
-    font-size: 20px;
+    font-size: 16px;
 
 }
 
@@ -152,10 +152,10 @@ main{
 
 
 .letterBold{
-    font-weight: bold;
+    font-weight: 500;
 }
 .letterLighter{
-    font-weight: normal;
+    font-weight: 400;
 }
 
 

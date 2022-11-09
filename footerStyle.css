@@ -6,10 +6,9 @@
     font-family: 'Roboto', sans-serif;
 }
 html{
-    background-color: rgb(143, 5, 120);
+    background-color: rgb(5, 143, 12);
 }
 body{
-    position: absolute;
 
     width: 720px;
     height: 100vh;

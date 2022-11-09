@@ -15,11 +15,12 @@ body{
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 footer{
+    position: absolute;
     width: 720px;
-    height: 100%;
+    height: fit-content;
+    bottom: 1px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;

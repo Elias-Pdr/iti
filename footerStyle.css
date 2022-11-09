@@ -6,7 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 html{
-    background-color: rgb(5, 143, 79);
+    background-color: rgb(143, 5, 5);
     width: 720px;
     min-height: 1500px;
     height: 100vh;
@@ -20,7 +20,6 @@ body{
 }
 footer{
     position: absolute;
-    width: 720px;
     height: fit-content;
     bottom: 1px;
     display: flex;

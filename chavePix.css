@@ -47,7 +47,14 @@ header p{
 
 
 
+.containerInput{
+    background-color: #666;
 
+    position: absolute;
+    bottom: 50%;
+    width: 720px;
+
+}
 .containerInput > p{
     text-align: center;
     margin-bottom: 40px;

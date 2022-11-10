@@ -15,7 +15,7 @@
             <p>escolha a chave</p>
         </header>
         <main>
-            <div class="containerbtns">
+            <div id="containerbtns" class="containerbtns">
                 <div class="btns">
                     <img src="img/escolhaChavePix/chavePix_aleatoria.png" alt="">
                     <p>chave aleatória</p>
@@ -56,6 +56,21 @@
     </footer>
 
 
-    <script src="controllerTeclado.js"></script>
+    <script>
+        let body = document.getElementById("body")
+        let inputTxt = document.querySelectorAll(".input")
+        let _margin = document.getElementById("containerbtns")
+
+        inputTxt[0].addEventListener('mouseover', (e)=>{ 
+            _margin.style.marginBottom = "400px"
+            body.style.justifyContent = "normal"
+
+        })
+        inputTxt[0].addEventListener('mouseout', (e)=>{ 
+            _margin.style.marginBottom = "476px"
+            body.style.justifyContent = "space-between"
+
+        })
+    </script>
 </body>
 </html>

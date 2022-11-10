@@ -1,6 +1,5 @@
 let inputTxt = document.querySelectorAll(".input")
 
-let body = document.getElementById("body")
 
 inputTxt[0].addEventListener('mouseover', (e)=>{ 
     body.style.justifyContent = "normal"

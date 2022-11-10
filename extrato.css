@@ -75,10 +75,10 @@ header p{
 }
 .traco{
     width: 3px;
-    height: 124px;
+    height: 127px;
     background-color: hsla(0, 0%, 45%, 0.8);
 
     position: absolute;
     left: 43px;
-    top: 326px;
+    top: 324px;
 }

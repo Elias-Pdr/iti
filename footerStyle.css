@@ -25,6 +25,7 @@ footer{
     width: 720px;
     height: 78px;
     margin-bottom: 56px;
+    margin-top: 60px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;

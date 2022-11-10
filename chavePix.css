@@ -1,6 +1,9 @@
 body{
     background-color: #fafafa;
 }
+#bodyDiv{
+    background-color: #cecece;
+}
 header{
     display: flex;
     align-items: center;
@@ -19,7 +22,6 @@ header p{
 }
 .containerbtns{
     display: flex;
-    margin-bottom: 476px;
     margin-top: 40px;
     justify-content: center;
 }

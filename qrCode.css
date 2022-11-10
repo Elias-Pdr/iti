@@ -39,6 +39,7 @@ main p{
     height: 790px;
     padding: 34px;
     background-image: url(img/qr/leitorQr.png);
+    background-size: cover;
 }
 .scanner{
     width: 100%;

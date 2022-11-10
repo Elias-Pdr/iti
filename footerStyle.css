@@ -28,4 +28,7 @@ footer{
     flex-direction: column;
 
     padding: 0px 58px;
+
+    position: absolute;
+    bottom: 0px;
 }

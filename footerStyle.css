@@ -6,15 +6,13 @@
     font-family: 'Roboto', sans-serif;
 }
 html{
-    background-color: rgb(143, 5, 74);
+    background-color: rgb(28, 143, 5);
     height: 100%;
-
 }
 body{
-
     width: 720px;
     height: 100%;
-
+    min-height: fit-content;
     overflow-x: hidden;
 }
 

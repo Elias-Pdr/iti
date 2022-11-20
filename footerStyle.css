@@ -10,7 +10,8 @@ html{
     height: 100%;
 }
 body{
-    width: 720px;
+    width: 100%;
+    min-width: 720px;
     height: 100%;
 
     overflow-x: hidden;

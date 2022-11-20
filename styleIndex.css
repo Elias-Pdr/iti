@@ -17,7 +17,7 @@ header{
     align-items: flex-end;
     margin-bottom: 70px;
 
-    background-color: var(--colorDebug);
+    background-color: red;
     padding: 1px;
 }
 

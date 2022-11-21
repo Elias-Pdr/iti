@@ -15,18 +15,29 @@
             <p>digite sua senha iti</p>
             <img src="img/senha/x.png" onclick="window.location.href='confirmacaoPix.html'">
         </header>
-        <div class="containerSenha" onclick="window.location.href='pagamentoFeitoPix.html'">
+        <form class="containerSenha" name="F1">
 
 
-            <input class="senha" maxlength="1" type="password" name="senha1" id="senha1">
-            <input class="senha" maxlength="1" type="password" name="senha1" id="senha1">
-            <input class="senha" maxlength="1" type="password" name="senha1" id="senha1">
-            <input class="senha" maxlength="1" type="password" name="senha1" id="senha1">
-            <input class="senha" maxlength="1" type="password" name="senha1" id="senha1">
-            <input class="senha" maxlength="1" type="password" name="senha1" id="senha1">
+            <input onkeyup="jumTo('senha1', 'senha2')" class="senha" maxlength="1" type="password" name="senha1" id="senha1">
+            <input onkeyup="jumTo('senha2', 'senha3')" class="senha" maxlength="1" type="password" name="senha2" id="senha2">
+            <input onkeyup="jumTo('senha3', 'senha4')" class="senha" maxlength="1" type="password" name="senha3" id="senha3">
+            <input onkeyup="jumTo('senha4', 'senha5')" class="senha" maxlength="1" type="password" name="senha4" id="senha4">
+            <input onkeyup="jumTo('senha5', 'senha6')" class="senha" maxlength="1" type="password" name="senha5" id="senha5">
+            <input oninput="window.location.href = 'pagamentoFeitoPix.html'" class="senha" maxlength="1" type="password" name="senha6" id="senha6">
 
-        </div>
+        </form>
         <p>esqueci minha senha</p>
     </div>
+
+
+    <script>
+        function jumTo(campoAtual, proximoCampo){
+            var tamanho_max = eval("document.F1." + campoAtual + ".maxLength");
+            var tamanho_atual = eval("document.F1." + campoAtual + ".value.length");
+            if(tamanho_atual == tamanho_max){
+                eval("document.F1." + proximoCampo + ".focus();");
+            }
+        }
+    </script>
 </body>
 </html>

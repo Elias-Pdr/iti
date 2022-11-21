@@ -55,6 +55,9 @@ header p{
     color: var(--colorRosa);
 }
 
+
+
+
 #containerbtns_email,
 #containerbtns_cpf,
 #containerbtns_aleatoria,
@@ -62,17 +65,19 @@ header p{
     display: none;
 }
 
-.containerInput{
+.containerForm{
     position: absolute;
     bottom: 50%;
     width: 720px;
-
+    display: none;
 }
-.containerInput > p{
+
+
+#labelContainerInput{
     text-align: center;
     margin-bottom: 40px;
 }
-.containerInput > div{
+.containerForm > div{
     display: flex;
     justify-content: space-between;
 }
@@ -92,10 +97,25 @@ header p{
     height: 76px;
     border-bottom: 2px solid #dcdcdc;
 }
-.containerTel:hover{
+
+
+.containerInputChave input::placeholder{
+    color: #dcdcdc;
+}
+
+
+.containerInputChave{
+    margin: 0px 35px;
+    font-size: 35px;
+
+    width: 100%;
+    height: 76px;
+    border-bottom: 2px solid #dcdcdc;
+}
+.containerInputChave:hover{
     border-bottom: 2px solid var(--colorRosa);
 }
-.containerTel input{
+.containerInputChave input{
     width: 100%;
     height: fit-content;
     outline: none;
@@ -106,9 +126,10 @@ header p{
     justify-content: flex-start;
     background: none;
 }
-.containerTel input::placeholder{
-    color: #dcdcdc;
-}
+
+
+
+
 
 
 footer input{

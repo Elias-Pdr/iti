@@ -71,7 +71,9 @@ header p{
     width: 720px;
     display: none;
 }
-
+#celularInput{
+    display: block;
+}
 
 #labelContainerInput{
     text-align: center;

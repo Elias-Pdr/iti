@@ -146,7 +146,7 @@
                     <p>+55</p>
                 </div>
                 <div class="containerInputChave containerTel">
-                    <input class="input" type="tel" placeholder="(00) 0 0000 0000" id="tel">
+                    <input class="input" type="tel" placeholder="(00) 0 0000 0000" maxlength="16" id="celular">
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@
             <p id="labelContainerInput">digite a chave</p>
             <div>
                 <div class="containerInputChave">
-                    <input class="input" type="number" placeholder="000.000.000-00" id="cpf">
+                    <input class="input" type="text" placeholder="000.000.000-00" maxlength="14" id="cpf">
                 </div>
             </div>
         </div>
@@ -192,13 +192,13 @@
     </main>
 
     <footer>
-        <input type="button" value="continuar" onclick="window.location.href='valorPix.html'">
+        <input id="btnNext" type="button" value="continuar" onclick="window.location.href='valorPix.html'">
     </footer>
 
 
     <script>
         function clickBtn(idBtn, typeKey){
-            console.log(typeKey);
+            noColorBtnNext();
             let containerbtns = document.querySelectorAll(".containerbtns");
 
             for (let i = 0; i < containerbtns.length; i++) {
@@ -215,6 +215,57 @@
             }
 
             document.getElementById(typeKey + "Input").style.display = "block"
+        }
+
+        input_celular = document.getElementById("celular")
+        input_cpf = document.getElementById("cpf")
+        input_agConta = document.getElementById("agConta")
+        input_email = document.getElementById("email")
+        input_chaveAleatoria = document.getElementById("chaveAleatoria")
+
+
+        input_celular.addEventListener('input', (e)=>{ 
+            if (input_celular.value.length == 2) {
+                input_celular.value = "(" + input_celular.value + ") "
+            }
+            else if (input_celular.value.length == 6) {
+                input_celular.value = input_celular.value + " "
+            }
+            else if (input_celular.value.length == 11) {
+                input_celular.value = input_celular.value + " "
+            }
+            else if (input_celular.value.length == 16) {
+                colorBtnNext()
+            }
+        })
+
+        input_email.addEventListener('input', (e)=>{ 
+            if (input_email.value.indexOf("@") != '-1' && input_email.value.indexOf(".com") != '-1') {
+                colorBtnNext()
+            }       
+        })
+
+        input_cpf.addEventListener('input', (e)=>{ 
+            if (input_cpf.value.length == 3 || input_cpf.value.length == 7) {
+                input_cpf.value = input_cpf.value + '.'
+            }
+            else if(input_cpf.value.length == 11){
+                input_cpf.value = input_cpf.value + '-'
+            }
+            else if(input_cpf.value.length == 14){
+                colorBtnNext()
+            }  
+        })
+
+        function colorBtnNext(){
+            document.getElementById("btnNext").disabled = false;
+            document.getElementById("btnNext").style.backgroundColor = "var(--colorRosa)"
+            document.getElementById("btnNext").style.color = "white"
+        }
+        function noColorBtnNext(){
+            document.getElementById("btnNext").disabled = true;
+            document.getElementById("btnNext").style.backgroundColor = "#dcdcdc"
+            document.getElementById("btnNext").style.color = "#cecece"
         }
     </script>
 </body>

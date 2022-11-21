@@ -21,15 +21,91 @@
             <p>quanto você vai pagar para</p>
             <p>Pedro Elias Jerusaleno Calabianqui</p>
             <div class="containerInput">
-                <input type="number" name="valor" id="valor" placeholder="R$ 0,00">
+                <input type="text" name="valor" id="valor" placeholder="R$ 0,00">
             </div>
             <p>limite de R$ 1.000,00</p>
         </main>
     </div>
     
     <footer>
-        <input type="button" value="continuar" onclick="window.location.href='confirmacaoPix.html'">
+        <input id="btnNext" type="button" value="continuar" onclick="window.location.href='confirmacaoPix.html'">
     </footer>
 
+
+
+    <script>
+        let input_value = document.getElementById("valor")
+        let i = 0;
+        input_value.addEventListener('input', (e)=>{ 
+
+            colorBtnNext()
+
+            i++
+
+            let primeiroValor = '#'
+            let segundoValor = '#'
+            let terceiroValor = '#'
+            let quartoValor = '#'
+            let quintoValor = '#'
+
+            if (i == 1) {
+                primeiroValor = input_value.value
+
+                input_value.value = 'R$ 0,0' + primeiroValor
+                //R$ 0,01
+            }
+            if (i == 2) {
+                segundoValor = input_value.value.replace('R$ 0,0', '')
+                input_value.value = 'R$ 0,'  + segundoValor
+                //R$ 0,12
+            }
+            if (i == 3) {
+                terceiroValor = input_value.value.replace('R$ 0,', '')
+
+                var string = terceiroValor;
+                var resultado = string.substr(0,1)+","+string.substr(1,2);
+
+                input_value.value = 'R$ 0'  + resultado
+                //R$ 01,23
+            }
+            if (i == 4) {
+                quartoValor = input_value.value.replace('R$ 0', '').replace(',', '')
+                //R$ 01,23
+
+                var string = quartoValor;
+                var resultado = string.substr(0,2)+","+string.substr(2,3);
+
+                input_value.value = 'R$ '  + resultado
+                //R$ 12,34
+            }
+            if (i == 5) {
+                quintoValor = input_value.value.replace('R$', '').replace(',', '')
+                //R$ 123,45
+
+                var string = quintoValor;
+                var resultado = string.substr(0,4)+","+string.substr(4,4);
+
+                input_value.value = 'R$'  + resultado
+
+            }
+
+
+            
+            else if(input_value.value.length == 14){
+                colorBtnNext()
+            }  
+        })
+
+        function colorBtnNext(){
+            document.getElementById("btnNext").disabled = false;
+            document.getElementById("btnNext").style.backgroundColor = "var(--colorRosa)"
+            document.getElementById("btnNext").style.color = "white"
+        }
+        function noColorBtnNext(){
+            document.getElementById("btnNext").disabled = true;
+            document.getElementById("btnNext").style.backgroundColor = "#dcdcdc"
+            document.getElementById("btnNext").style.color = "#cecece"
+        }
+    </script>
 </body>
 </html>

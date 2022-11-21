@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=720px, initial-scale=1.0">
+    <title>Adm</title>
+    <link rel="stylesheet" href="footerStyle.css">
+    <style>
+        body{
+            background-color: #2b384b;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            box-shadow: 0px 3px 14px 2px #0000001a;
+            margin-bottom: 50px;
+        }
+        header h1{
+            font-size: 2em;
+            color: white;
+        }
+        header img{
+            position: absolute;
+            right: 60px;
+        }
+        form div{
+            width: 89%;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            font-size: 1em;
+            border: 1px solid black;
+        }
+        label{
+            color: white;
+        }
+        input{
+            height: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Área do desenvolverdor</h1>
+        <img src="img/comprovante/x.png" alt="">
+    </header>
+    <main>
+        <form action="">
+            <div>
+                <label for="myName">Seu nome</label>
+                <input type="text" name="myName" id="myName">
+            </div>
+
+            <div>
+                <label for="myMoney">Seu saldo</label>
+                <input type="text" name="myMoney" id="myMoney">
+            </div>
+
+            <div>
+                <label for="vitName">Nome da vítima</label>
+                <input type="text" name="vitName" id="vitName">
+            </div>
+
+            <div>
+                <label for="vitCPForCNPJ">CPF da vítima</label>
+                <input type="text" name="vitCPForCNPJ" id="vitCPForCNPJ">
+            </div>
+
+            <div>
+                <label for="vitTel">Número da vítima</label>
+                <input type="text" name="vitTel" id="vitTel">
+            </div>
+
+            <div>
+                <label for="vitBank">Banco da vítima</label>
+                <input type="text" name="vitBank" id="vitBank">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

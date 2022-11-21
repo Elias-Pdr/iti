@@ -17,8 +17,8 @@
         </header>
         <main>
             <img src="img/pagamentoFeitoPix/check.png" alt="">
-            <p>R$ 0,01</p>
-            <p>para <strong>Pedro Elias Jeruleno Calabinquei</strong></p>
+            <p>R$ <span id="preco">0,00</span></p>
+            <p>para <strong id="vitName">Pedro Elias Jeruleno Calabinquei</strong></p>
             <div>
                 <p>dividir este valor com alguém</p>
             </div>
@@ -29,5 +29,12 @@
         <input type="button" value="ver comprovante" onclick="window.location.href='comprovante.html'">
     </footer>
     <script src="controllerMain.js"></script>
+    <script>
+        let valorPix = localStorage.getItem("preco").replace(',','.')
+        let meuDinheiro = localStorage.getItem("myMoney").replace(',','.')
+
+        localStorage.setItem("myMoney", (meuDinheiro - valorPix).toFixed(2).replace('.',','))
+
+    </script>
 </body>
 </html>

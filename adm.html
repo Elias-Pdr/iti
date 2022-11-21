@@ -11,6 +11,9 @@
             background-color: #2b384b;
         }
         header{
+            position: absolute;
+            width: 100%;
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -28,7 +31,9 @@
         }
 
 
-
+        form{
+            margin-top: 160px;
+        }
         form div{
             width: 89%;
             margin: 60px auto;
@@ -38,6 +43,13 @@
             display: flex;
             flex-direction: column;
         }
+        form div:hover{
+            border: 2px solid wheat;
+        }
+        form div:hover label,
+        form div:hover input{
+            color: wheat;
+        }        
         label{
             display: block;
             color: white;
@@ -49,9 +61,9 @@
             width: fit-content;
             border-radius: 10px;
         }
-        input{
+        div input{
             background: none;
-            height: 50px;
+            height: 70px;
             border: none;
             outline: none;
             margin-left: 20px;
@@ -59,47 +71,74 @@
             font-size: 1.3em;
             position: relative;
             bottom: 15px;
-
+        }
+        .btnConfirmar{
+            width: 89%;
+            margin: auto;
+            padding: 15px;
+            border: none;
+            background-image: linear-gradient(310deg, #384a64, #293f60);
+        }
+        .btnConfirmar input{
+            background: none;
+            border: none;
+            outline: none;
+            margin-left: 0px;
+            color: white;
+            font-size: 1.3em;
+            position: relative;
+            bottom: 0px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Área do desenvolverdor</h1>
-        <img src="img/comprovante/x.png" alt="">
+        <img src="img/comprovante/x.png" onclick="window.location.href='index.html'">
     </header>
     <main>
         <form action="">
             <div>
                 <label for="myName">Seu nome</label>
-                <input type="text" name="myName" id="myName">
+                <input placeholder="Pedro Elias Rei Delas" type="text" name="myName" id="myName">
             </div>
 
             <div>
                 <label for="myMoney">Seu saldo</label>
-                <input type="text" name="myMoney" id="myMoney">
+                <input placeholder="300,00" type="text" name="myMoney" id="myMoney">
             </div>
 
             <div>
                 <label for="vitName">Nome da vítima</label>
-                <input type="text" name="vitName" id="vitName">
+                <input placeholder="Trouxa da silva" type="text" name="vitName" id="vitName">
             </div>
 
             <div>
                 <label for="vitCPForCNPJ">CPF da vítima</label>
-                <input type="text" name="vitCPForCNPJ" id="vitCPForCNPJ">
+                <input placeholder="***.000.000-**" type="text" name="vitCPForCNPJ" id="vitCPForCNPJ">
             </div>
 
             <div>
                 <label for="vitTel">Número da vítima</label>
-                <input type="text" name="vitTel" id="vitTel">
+                <input placeholder="24 4002-8922" type="text" name="vitTel" id="vitTel">
             </div>
 
             <div>
                 <label for="vitBank">Banco da vítima</label>
-                <input type="text" name="vitBank" id="vitBank">
+                <input placeholder="Inter S/A" type="text" name="vitBank" id="vitBank">
             </div>
+
+            <div class="btnConfirmar"><input onclick="saveInfos()" type="button" value="Confirmar"></div>
         </form>
     </main>
+    <script src="controllerMain.js"></script>
+    <script>
+        myName.value = localStorage.getItem("myName")
+        myMoney.value = localStorage.getItem("myMoney")
+        vitName.value = localStorage.getItem("vitName")
+        vitCPForCNPJ.value = localStorage.getItem("vitCPForCNPJ")
+        vitTel.value = localStorage.getItem("vitTel")
+        vitBank.value = localStorage.getItem("vitBank")
+    </script>
 </body>
 </html>

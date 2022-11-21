@@ -19,7 +19,7 @@
         </header>
         <main>
             <p>quanto você vai pagar para</p>
-            <p>Pedro Elias Jerusaleno Calabianqui</p>
+            <p id="vitName">Pedro Elias Jerusaleno Calabianqui</p>
             <div class="containerInput">
                 <input type="text" name="valor" id="valor" placeholder="R$ 0,00">
             </div>
@@ -28,7 +28,7 @@
     </div>
     
     <footer>
-        <input id="btnNext" type="button" value="continuar" onclick="window.location.href='confirmacaoPix.html'">
+        <input id="btnNext" type="button" value="continuar" onclick="valorContinuar()">
     </footer>
 
 
@@ -65,12 +65,12 @@
                 var string = terceiroValor;
                 var resultado = string.substr(0,1)+","+string.substr(1,2);
 
-                input_value.value = 'R$ 0'  + resultado
-                //R$ 01,23
+                input_value.value = 'R$ '  + resultado
+                //R$ 1,23
             }
             if (i == 4) {
-                quartoValor = input_value.value.replace('R$ 0', '').replace(',', '')
-                //R$ 01,23
+                quartoValor = input_value.value.replace('R$ ', '').replace(',', '')
+                //R$ 1,23
 
                 var string = quartoValor;
                 var resultado = string.substr(0,2)+","+string.substr(2,3);
@@ -105,6 +105,11 @@
             document.getElementById("btnNext").disabled = true;
             document.getElementById("btnNext").style.backgroundColor = "#dcdcdc"
             document.getElementById("btnNext").style.color = "#cecece"
+        }
+        
+        function valorContinuar() {
+            localStorage.setItem("preco", document.getElementById("valor").value.replace('R$', ''))
+            window.location.href='confirmacaoPix.html'
         }
     </script>
     <script src="controllerMain.js"></script>

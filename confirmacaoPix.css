@@ -62,7 +62,7 @@ header div:nth-child(1) p{
     color: #ff5593; 
     margin-bottom: 16px;
 }
-#valorPix{
+.valorPix{
     font-size: 38px;
 }
 .containerText p:nth-child(2){

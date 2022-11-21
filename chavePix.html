@@ -192,7 +192,7 @@
     </main>
 
     <footer>
-        <input id="btnNext" type="button" value="continuar" onclick="window.location.href='valorPix.html'">
+        <input id="btnNext" type="button" value="continuar" onclick="continuar()">
     </footer>
 
 
@@ -266,6 +266,27 @@
             document.getElementById("btnNext").disabled = true;
             document.getElementById("btnNext").style.backgroundColor = "#dcdcdc"
             document.getElementById("btnNext").style.color = "#cecece"
+        }
+    
+        function continuar(){
+            if (document.getElementById("celularInput").style.display != "none") {
+                localStorage.setItem("chaveUsada", document.getElementById("celular").value) 
+            }
+            else if (document.getElementById("cpfInput").style.display != "none") {
+                localStorage.setItem("chaveUsada", document.getElementById("cpf").value) 
+            }
+            else if (document.getElementById("chaveAleatoriaInput").style.display != "none") {
+                localStorage.setItem("chaveUsada", document.getElementById("chaveAleatoria").value) 
+            }
+            else if (document.getElementById("agContaInput").style.display != "none") {
+                localStorage.setItem("chaveUsada", document.getElementById("agConta").value) 
+            }
+            else if (document.getElementById("emailInput").style.display != "none") {
+                localStorage.setItem("chaveUsada", document.getElementById("email").value) 
+            }
+
+
+            window.location.href='valorPix.html'
         }
     </script>
     <script src="controllerMain.js"></script>

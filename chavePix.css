@@ -43,13 +43,26 @@ header p{
     border-radius: 20px;
     margin-bottom: 15px;
     background-color: white;
+    padding: 2px;
 }
 
 
+.destaqueImg img{
+    background-color: var(--colorRosa);
+    box-shadow: none;
+}
+.destaqueImg p{
+    color: var(--colorRosa);
+}
+
+#containerbtns_email,
+#containerbtns_cpf,
+#containerbtns_aleatoria,
+#containerbtns_agConta{
+    display: none;
+}
 
 .containerInput{
-    background-color: #666;
-
     position: absolute;
     bottom: 50%;
     width: 720px;
@@ -78,6 +91,9 @@ header p{
     width: 484px;
     height: 76px;
     border-bottom: 2px solid #dcdcdc;
+}
+.containerTel:hover{
+    border-bottom: 2px solid var(--colorRosa);
 }
 .containerTel input{
     width: 100%;

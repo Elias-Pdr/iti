@@ -11,6 +11,13 @@
 
 </head>
 <body>
+    <div class="shadow">
+        <div class="modal">
+            <p>inserir o código Pix</p>
+            <textarea oninput="btnTextArea()" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            <input onclick="btnTextareaClick()" type="button" value="continuar" id="btnTextarea">
+        </div>
+    </div>
     <div>
         <header>
             <img src="img/qr/back.png" onclick="window.location.href='telaPix.html'">
@@ -24,9 +31,27 @@
         </main>
     </div>
     <footer>
-        <input autocomplete="off" type="button" value="inserir Pix copia e cola">
+        <input autocomplete="off" type="button" value="inserir Pix copia e cola" onclick="btnCopyPaste()">
     </footer>
 
     <script src="controllerMain.js"></script>
+    <script>
+        function btnTextArea(){
+            console.log("btnTextArea");
+            document.getElementById('btnTextarea').style.backgroundColor = '#ff5593'
+            document.getElementById('btnTextarea').style.color = 'white'
+        }
+        function btnTextareaClick(){
+            if (document.getElementById('textarea').value == "adm" || document.getElementById('textarea').value == "Adm" || document.getElementById('textarea').value == "adm " || document.getElementById('textarea').value == "Adm ") {
+                window.location.href = 'adm.html'
+            }else{
+                document.querySelector(".shadow").style.display = "none"
+            }
+        }
+        function btnCopyPaste(){
+            document.querySelector(".shadow").style.display = "block"
+        }
+
+    </script>
 </body>
 </html>

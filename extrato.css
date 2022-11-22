@@ -70,7 +70,17 @@ header p{
     height: 36px;
     margin: 0px 13px 0px 26px;
 }
-
+#erro img:nth-child(1){
+    width: 34px;
+    height: 34px;
+    margin: 0px 13px 0px 26px;
+}
+#erro span > p{
+    color: #f44336;
+}
+#erro > p{
+    color: rgba(0, 0, 0, 0.3);
+}
 .data{
     margin-right: 35px;
 }

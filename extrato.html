@@ -18,16 +18,16 @@
                 <img src="img/extrato/comprov.png" alt="">
             </div>
             <div class="containerBtn">
-                <div class="btn">
+                <div id="_btnTodas" class="btn" onclick="btnTodas('_btnTodas')">
                     <p>todas</p>
                 </div>
-                <div class="btn">
+                <div id="_btnRecebidos" class="btn" onclick="btnRecebidos('_btnRecebidos')">
                     <p>recebimentos</p>
                 </div>
-                <div class="btn">
+                <div id="_btnPagamentos" class="btn" onclick="btnPagamentos('_btnPagamentos')">
                     <p>pagamentos</p>
                 </div>
-                <div class="btn">
+                <div id="_btnPix" class="btn" onclick="btnTodas('_btnPix')">
                     <p>pix</p>
                 </div>
             </div>
@@ -35,27 +35,79 @@
 
         <main>
             <div class="containerNomesLista">
-                <div class="nome" onclick="window.location.href = 'comprovante.html'">
+
+                <div id="traco2" class="traco2"></div>
+
+                <div id="pagamentos" class="nome" onclick="window.location.href = 'comprovante.html'">
                     <div class="imgNome">
-                        <img src="img/extrato/din.png" alt="">
-                        <p id="vitName">Pedro Elias Jerisaleno Calaboca</p>
+                        <span>
+                            <img src="img/extrato/din.png" alt="">
+                            <p id="vitName">Pedro Elias Jerisaleno Calaboca</p>
+                        </span>
+                        <p class="data">31 out.</p>
                     </div>
                     <p>- R$ <span id="preco">0,01</span> <span>via Pix</span></p>
                 </div>
                 
-                <div class="traco"></div>
+                <div id="traco" class="traco"></div>
 
-                <div class="nome">
+                <div id="recebidos" class="nome">
                     <div class="imgNome">
-                        <img src="img/extrato/din.png" alt="">
-                        <p>João Carlos dos Santos Calabinqui<p>
+                        <span>
+                            <img src="img/extrato/din.png" alt="">
+                            <p>João Carlos dos Santos Calabinqui</p>
+                        </span>
+                        <p class="data">31 out.</p>
                     </div>
-                    <p>R$ <span>20,00</span> <span>via Pix</span></p>
+                    <p style="color:green;">R$ <span>20,00</span> <span>via Pix</span></p>
                 </div>
                 
             </div>
         </main>
     </div>
     <script src="controllerMain.js"></script>
+    <script>
+        let objtsReceb = document.getElementById("recebidos")
+        let objtsPagos = document.getElementById("pagamentos")
+        let traco = document.getElementById("traco")
+
+        function btnTodas(idBtn){
+            cleanBtn()
+
+            objtsReceb.style.display = 'block'
+            traco.style.display = 'block'
+            objtsPagos.style.display = 'block'
+            document.getElementById(idBtn).style.backgroundColor = "white"
+            document.getElementById(idBtn).style.color = "#ef6e03"
+        }
+        function btnRecebidos(idBtn){
+            cleanBtn()
+
+            objtsReceb.style.display = 'block'
+            traco.style.display = 'none'
+            objtsPagos.style.display = 'none'
+            document.getElementById(idBtn).style.backgroundColor = "white"
+            document.getElementById(idBtn).style.color = "#ef6e03"
+
+        }
+        function btnPagamentos(idBtn){
+            cleanBtn()
+
+            objtsReceb.style.display = 'none'
+            traco.style.display = 'none'
+            objtsPagos.style.display = 'block'
+            document.getElementById(idBtn).style.backgroundColor = "white"
+            document.getElementById(idBtn).style.color = "#ef6e03"
+
+        }
+        function cleanBtn(){
+            let classBtn = document.querySelectorAll(".btn")
+
+            for (let i = 0; i < classBtn.length; i++) {
+                classBtn[i].style.background = "none"
+                classBtn[i].style.color = "white"
+            }
+        }
+    </script>
 </body>
 </html>

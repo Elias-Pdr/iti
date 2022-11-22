@@ -37,6 +37,7 @@ header p{
     border-radius: 50px;
     font-weight: 500;
 }
+
 .btn:nth-child(1){
     background-color: white;
     color: #ef6e03;
@@ -58,11 +59,20 @@ header p{
 .imgNome{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.imgNome > span{
+    display: flex;
+    align-items: center;
 }
 .imgNome img{
     width: 36px;
     height: 36px;
     margin: 0px 13px 0px 26px;
+}
+
+.data{
+    margin-right: 35px;
 }
 .nome > p{
     margin-left: 75px;
@@ -73,7 +83,8 @@ header p{
     font-size: 20px;
     font-weight: 400;
 }
-.traco{
+.traco,
+.traco2{
     width: 3px;
     height: 127px;
     background-color: hsla(0, 0%, 45%, 0.8);
@@ -81,4 +92,8 @@ header p{
     position: absolute;
     left: 43px;
     top: 324px;
+}
+.traco2{
+    height: 30px;
+    top: 260px;
 }

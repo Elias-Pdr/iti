@@ -9,9 +9,6 @@
     font-family: 'Roboto', sans-serif;
     max-width: 720px;
 }
-html{
-    background-color: rgb(28, 143, 5);
-}
 html, body{
     height: 100%;
     width: 100%;

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="chavePix.css">
     <link rel="stylesheet" href="footerStyle.css">
 </head>
-<body id="body">    
+<body>    
     <div>
         <header>
             <img src="img/escolhaChavePix/back.png" onclick="window.location.href = 'telaPix.html'">
@@ -138,7 +138,7 @@
 
     </div>
 
-    <main>
+    <form>
         <div id="celularInput" class="containerForm">
             <p id="labelContainerInput">digite a chave</p>
             <div>
@@ -146,7 +146,7 @@
                     <p>+55</p>
                 </div>
                 <div class="containerInputChave containerTel">
-                    <input class="input" type="tel" placeholder="(00) 0 0000 0000" maxlength="16" id="celular">
+                    <input autocomplete="off" class="input" type="tel" placeholder="(00) 0 0000 0000" maxlength="16" id="celular">
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@
             <p id="labelContainerInput">digite a chave</p>
             <div>
                 <div class="containerInputChave">
-                    <input class="input" type="text" placeholder="000.000.000-00" maxlength="14" id="cpf">
+                    <input autocomplete="off" class="input" type="text" placeholder="000.000.000-00" maxlength="14" id="cpf">
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@
             <p id="labelContainerInput">digite a chave</p>
             <div>
                 <div class="containerInputChave">
-                    <input class="input" type="text" placeholder="abc123" id="chaveAleatoria">
+                    <input autocomplete="off" class="input" type="text" placeholder="abc123" id="chaveAleatoria">
                 </div>
             </div>
         </div>
@@ -173,7 +173,7 @@
             <p id="labelContainerInput">busque a instituição</p>
             <div>
                 <div class="containerInputChave">
-                    <input class="input" type="search" placeholder="buscar instituição" id="agConta">
+                    <input autocomplete="off" class="input" type="search" placeholder="buscar instituição" id="agConta">
                 </div>
             </div>
         </div>
@@ -182,17 +182,15 @@
             <p id="labelContainerInput">digite a chave</p>
             <div>
                 <div class="containerInputChave">
-                    <input class="input" type="email" placeholder="nome@email.com" id="email">
+                    <input autocomplete="off" class="input" type="email" placeholder="nome@email.com" id="email">
                 </div>
             </div>
         </div>
 
-
-        </div>
-    </main>
+    </form>
 
     <footer>
-        <input id="btnNext" type="button" value="continuar" onclick="continuar()">
+        <input autocomplete="off" id="btnNext" type="button" value="continuar" onclick="continuar()">
     </footer>
 
 

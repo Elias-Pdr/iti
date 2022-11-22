@@ -1,9 +1,7 @@
 body{
     background-color: #fafafa;
 }
-#bodyDiv{
-    background-color: #cecece;
-}
+
 header{
     display: flex;
     align-items: center;
@@ -64,13 +62,16 @@ header p{
 #containerbtns_agConta{
     display: none;
 }
+form{
+    margin-top: 16vh;
+    position: absolute;
+    width: 720px;
+}
 
 .containerForm{
-    position: absolute;
-    bottom: 50%;
-    width: 720px;
     display: none;
 }
+
 #celularInput{
     display: block;
 }
